@@ -78,7 +78,7 @@ start.addEventListener('click', function () {  // События для полу
                     appData.moneyPerDay = (appData.budget / 30).toFixed();
                     daybudgetValue.textContent = appData.moneyPerDay;
                 } else {
-                    appData.moneyPerDay = ((appData.budget / 30) - +expensesValue.textContent).toFixed();
+                    appData.moneyPerDay = ((appData.budget - +expensesValue.textContent) / 30) .toFixed();
                     daybudgetValue.textContent = appData.moneyPerDay;
                 };
                 
